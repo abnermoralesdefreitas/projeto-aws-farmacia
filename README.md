@@ -1,23 +1,49 @@
-# Projeto: Redução de Custos em Farmácias com AWS
-**Boot Camp 2025 - Abner Morales**
+# 💊 Redução de Custos em Farmácias com AWS
+> **Boot Camp 2025 - Projeto de Conclusão** > **Responsável:** Abner Morales
 
-## Introdução
-Este projeto apresenta uma proposta de arquitetura para redução de custos operacionais e de infraestrutura utilizando serviços da Amazon Web Services (AWS).
+Este repositório contém o projeto de análise e implementação de serviços **Amazon Web Services (AWS)** focado na otimização de gastos e eficiência operacional para o setor farmacêutico.
 
-## Descrição do Projeto
-A solução foca na migração de processos manuais e servidores subutilizados para um modelo gerenciado e sob demanda.
+---
 
-### Etapa 1: Armazenamento Otimizado (Amazon S3)
-- **Foco:** Migração de backups de notas fiscais e dados estáticos.
-- **Caso de Uso:** Utilização de S3 Intelligent-Tiering para reduzir custos de dados que não são acessados com frequência.
+## 📊 Visão Geral
+O objetivo principal é substituir infraestruturas legadas e custosas por uma arquitetura moderna baseada no modelo **Pay-as-you-go** (pagamento por uso), garantindo alta disponibilidade com o menor custo possível.
 
-### Etapa 2: Processamento Eficiente (AWS Lambda)
-- **Foco:** Automação de relatórios de estoque.
-- **Caso de Uso:** Substituição de servidores ligados 24/7 por funções serverless que só executam quando um novo pedido é registrado.
+## 🛠️ Tecnologias Utilizadas
+| Serviço AWS | Função Principal | Impacto no Custo |
+| :--- | :--- | :--- |
+| **Amazon S3** | Armazenamento de Objetos | Redução em backups físicos e dados frios. |
+| **AWS Lambda** | Computação Serverless | Eliminação de custos de servidores ociosos. |
+| **Amazon RDS** | Banco de Dados Gerenciado | Economia com Instâncias Reservadas (até 75%). |
 
-### Etapa 3: Banco de Dados Gerenciado (Amazon RDS)
-- **Foco:** Estabilidade e custo previsível.
-- **Caso de Uso:** Uso de instâncias reservadas para o banco de dados de clientes, garantindo economia de até 75% em relação ao modelo sob demanda.
+---
 
-## Conclusão
-A implementação foca na filosofia "pay-as-you-go", garantindo que a farmácia pague apenas pelo que consome, eliminando desperdícios de hardware local.
+## 🚀 Estratégia de Implementação
+
+### 1. Otimização de Armazenamento (S3)
+Migração de notas fiscais e registros de inventário para o **Amazon S3**. 
+* **Destaque:** Uso de *S3 Lifecycle Policies* para mover arquivos antigos automaticamente para classes de custo ultra baixo (Glacier).
+
+### 2. Automação com Serverless (Lambda)
+Processamento de relatórios de vendas disparados por eventos.
+* **Destaque:** Sem cobrança por tempo de inatividade; o custo ocorre apenas durante a execução do script.
+
+### 3. Persistência de Dados (RDS)
+Migração para o **Amazon RDS** para gerenciar o banco de dados de clientes e estoque.
+* **Destaque:** Implementação de backups automatizados e redundância, reduzindo gastos com recuperação de desastres manual.
+
+---
+
+## 📈 Resultados Esperados
+* **Redução Mensal:** Estimada em **70%** comparado ao servidor local.
+* **Escalabilidade:** Capacidade de suportar picos de vendas (ex: Black Friday) sem investimento prévio em hardware.
+* **Foco no Negócio:** Menor tempo gasto com manutenção de TI e mais foco na operação farmacêutica.
+
+---
+
+## 📂 Estrutura do Repositório
+* `/docs`: Prints da Calculadora de Preços AWS.
+* `database_setup.sql`: Script de simulação do banco de dados.
+* `README.md`: Relatório detalhado do projeto.
+
+---
+📫 **Contato:** [Seu LinkedIn ou E-mail]
