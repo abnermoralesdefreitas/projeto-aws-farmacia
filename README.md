@@ -50,4 +50,4 @@ Migração para o **Amazon RDS** para gerenciar o banco de dados de clientes e e
 * `README.md`: Relatório detalhado do projeto.
 
 ---
-📫 **Contato:** [Seu LinkedIn ou E-mail]
+📫 **Contato:** https://www.linkedin.com/in/abner-morales-de-freitas-093426301/?originalSubdomain=br
