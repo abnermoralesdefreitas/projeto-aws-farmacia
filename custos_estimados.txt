@@ -1,0 +1,6 @@
+ESTIMATIVA DE ECONOMIA MENSAL (AWS Calculator)
+
+Cenário Anterior (Servidor Local/EC2 On-Demand): $150.00/mês
+Cenário Atual (S3 + Lambda + RDS Reservado): $45.00/mês
+
+Economia Total Estimada: 70% de redução de custo mensal.
