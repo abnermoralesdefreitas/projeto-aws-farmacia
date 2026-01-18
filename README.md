@@ -1,3 +1,7 @@
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Cloud](https://img.shields.io/badge/Cloud-Solutions-blue?style=for-the-badge&logo=icloud&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge)
+
 # 💊 Redução de Custos em Farmácias com AWS
 > **Boot Camp 2025 - Projeto de Conclusão** > **Responsável:** Abner Morales
 
